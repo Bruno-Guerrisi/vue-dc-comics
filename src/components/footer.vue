@@ -4,11 +4,12 @@
 
         <nav class="nav-footer">
 
+            <!-- col uno -->
             <div class="col">
                 
                 <ul class="dc-comics">
 
-                    <h3>DC COMICS</h3>
+                    <h3>dc comics</h3>
 
                     <li tabindex="0" v-for="(element, i) in linkDcComics" :key="`element-${i}`">
                         <a href="">{{element.text}}</a>
@@ -17,9 +18,35 @@
 
                 <ul class="dc">
 
-                    <h3>SHOP</h3>
+                    <h3>shop</h3>
+
+                    <li tabindex="0" v-for="(element, i) in linkShop" :key="`element-${i}`">
+                        <a href="">{{element.text}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- col due -->
+            <div class="col">
+                
+                <ul class="dc-comics">
+
+                    <h3>dc</h3>
 
                     <li tabindex="0" v-for="(element, i) in linkDc" :key="`element-${i}`">
+                        <a href="">{{element.text}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- col tre -->
+            <div class="col">
+                
+                <ul class="dc-comics">
+
+                    <h3>sites</h3>
+
+                    <li tabindex="0" v-for="(element, i) in linkSites" :key="`element-${i}`">
                         <a href="">{{element.text}}</a>
                     </li>
                 </ul>
@@ -61,12 +88,64 @@ export default {
                     text: 'news',
                 },
             ],
-            linkDc: [
+            linkShop: [
                 {
                     text: 'Shop DC',
                 },
                 {
                     text: 'Shop DC Collectibles',
+                },
+            ],
+            linkDc: [
+                {
+                    text: 'Terms Of Use',
+                },
+                {
+                    text: 'Privacy policy (New)',
+                },
+                {
+                    text: 'Ad Choices',
+                },
+                {
+                    text: 'Advertising',
+                },
+                {
+                    text: 'Jobs',
+                },
+                {
+                    text: 'Subscription',
+                },
+                {
+                    text: 'Talent',
+                },
+                {
+                    text: 'CPSC Certificates',
+                },
+                {
+                    text: 'Ratings',
+                },
+                {
+                    text: 'Shop Help',
+                },
+                {
+                    text: 'Contact Us',
+                },
+            ],
+            linkSites: [
+                {
+                    text: 'DC',
+                },
+                {
+                    text: 'MAD Magazine',
+                },
+                {
+                    text: 'DC Kids',
+                },
+                {
+                    text: 'DC Universe',
+                },
+                {
+                    text: 'DC Power Visa',
                 },
             ],
         }
@@ -80,8 +159,8 @@ export default {
         background-image: url('../assets/footer-bg.jpg');
         background-repeat: no-repeat;
         height: 450px;
-        margin-bottom: 20px;
         overflow: hidden;
+        padding: 10px 20px;
 
         .container{
             padding: 20px 0;
@@ -90,10 +169,16 @@ export default {
 
             img{
                 position: relative;
-                top: -50px;
+                top: -60px;
             }
 
             nav{
+
+                display: flex;
+
+                div.col:nth-child(2){
+                    margin: 0px 30px;
+                }
 
                 div.col{
 
@@ -108,6 +193,7 @@ export default {
                         }
                         li{
                             margin: 8px 0;
+
                             a{
                                 text-decoration: none;
                                 color: #959595;

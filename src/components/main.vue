@@ -19,6 +19,8 @@ export default {
         background-color: #1c1c1c;
         color: white;
         height: 120px;
+        padding: 10px 20px;
+        
         .container{
 
             display: flex;
