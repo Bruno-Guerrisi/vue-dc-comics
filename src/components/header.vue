@@ -1,13 +1,15 @@
 <template>
   <header>
 
-      <img src="@/assets/dc-logo.png" alt="dc logo">
+    <div class="container">
+        <img src="@/assets/dc-logo.png" alt="dc logo">
 
-      <ul>
-          <li tabindex="0" v-for="(element, i) in linkNav" :key="`element-${i}`">
-              <a href="">{{element.text}}</a>
-            </li>
-      </ul>
+        <ul>
+            <li tabindex="0" v-for="(element, i) in linkNav" :key="`element-${i}`">
+                <a href="">{{element.text}}</a>
+                </li>
+        </ul>
+    </div>
   </header>
 </template>
 
@@ -58,38 +60,43 @@ export default {
     header{
         height: 120px;
         padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 
-        ul{
+        .container{
+
+
             display: flex;
             align-items: center;
-            list-style: none;
-            height: 100%;
-
-            li{
-                margin: 0 10px;
-                text-transform: uppercase;
-                height: 100%;
+            justify-content: space-between;
+    
+            ul{
                 display: flex;
                 align-items: center;
-                border-bottom: 5px solid transparent;
-
-                &:focus,
-                &:hover{
-                    border-bottom-color: #0c7cec;
-                    color: #0c7cec;
-                    cursor: pointer;
+                list-style: none;
+                height: 100%;
+    
+                li{
+                    margin: 0 10px;
+                    text-transform: uppercase;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 5px solid transparent;
+    
+                    &:focus,
+                    &:hover{
+                        border-bottom-color: #0c7cec;
+                        color: #0c7cec;
+                        cursor: pointer;
+                    }
+    
+                    a{
+                        text-decoration: none;
+                        color: currentColor;
+                        border: 0;
+                    }
                 }
-
-                a{
-                    text-decoration: none;
-                    color: currentColor;
-                    border: 0;
-                }
+    
             }
-
         }
     }
 </style>
