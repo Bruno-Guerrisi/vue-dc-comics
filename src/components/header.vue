@@ -7,7 +7,7 @@
         <ul>
             <li tabindex="0" v-for="(element, i) in linkNav" :key="`element-${i}`">
                 <a href="">{{element.text}}</a>
-                </li>
+            </li>
         </ul>
     </div>
   </header>
@@ -58,15 +58,19 @@ export default {
 <style lang="scss" scoped>
 
     header{
-        height: 120px;
-        padding: 10px 20px;
 
         .container{
+
+            img{
+                padding: 10px 0;
+            }
 
 
             display: flex;
             align-items: center;
             justify-content: space-between;
+            height: 120px;
+            padding: 0 20px;
     
             ul{
                 display: flex;

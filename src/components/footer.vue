@@ -62,7 +62,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Footer',
     data() {
         return {
             linkDcComics: [
@@ -158,6 +158,7 @@ export default {
     footer{
         background-image: url('../assets/footer-bg.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
         height: 450px;
         overflow: hidden;
         padding: 10px 20px;

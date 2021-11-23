@@ -7,6 +7,8 @@
 
     <Footer />
 
+    <FooterSubscribe />
+
   </div>
 </template>
 
@@ -14,6 +16,7 @@
 import Header from "@/components/header.vue"
 import Main from "@/components/main.vue"
 import Footer from "@/components/footer.vue"
+import FooterSubscribe from "@/components/footerSubscribe.vue"
 
 export default {
   name: 'App',
@@ -21,6 +24,7 @@ export default {
     Header,
     Main,
     Footer,
+    FooterSubscribe,
   }
 }
 </script>
