@@ -72,13 +72,13 @@ export default {
             align-items: center;
             justify-content: space-between;
             padding: 0 20px;
-    
+
             ul{
                 display: flex;
                 align-items: center;
                 list-style: none;
                 height: 100%;
-    
+
                 li{
                     margin: 0 10px;
                     text-transform: uppercase;

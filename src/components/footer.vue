@@ -206,6 +206,10 @@ export default {
                                 text-decoration: none;
                                 color: #959595;
                                 border: 0;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }

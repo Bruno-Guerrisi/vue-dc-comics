@@ -90,6 +90,7 @@ export default {
               font-weight: bold;
               cursor: pointer;
               transition: transform .3s;
+              margin-bottom: 20px;
 
               &:hover{
                 transform: scale(1.1);

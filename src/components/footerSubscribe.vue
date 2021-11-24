@@ -11,7 +11,7 @@
                 <li v-for="(element, i) in linkSocial" :key="`element-${i}`">
                     <a href="">
                         
-                        <img :src="element.link" alt="element.text">
+                        <img :src="element.link" :alt="element.text">
                     </a>
                 </li>
             </ul>
