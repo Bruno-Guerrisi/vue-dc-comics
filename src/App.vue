@@ -6,7 +6,7 @@
     <main>
       
       <MainJumbotron />
-      
+
       <Main />
     </main>
 
@@ -41,5 +41,4 @@ export default {
 
 <style lang="scss">
 @import '@/styles/globals';
-@import '@/styles/utilities';
 </style>
