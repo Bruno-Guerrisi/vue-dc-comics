@@ -1,21 +1,21 @@
 <template>
-  <main>
+  <section>
       <div class="container">
 
         <h2> Content goes here </h2>
       </div>
-  </main>
+  </section>
 </template>
 
 <script>
 export default {
-
+  name: 'main',
 }
 </script>
 
 <style lang="scss" scoped>
 
-    main{
+    section{
         background-color: #1c1c1c;
         color: white;
         height: 120px;

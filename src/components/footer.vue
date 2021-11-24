@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <section>
       <div class="container">
 
         <nav class="nav-footer">
@@ -54,10 +54,13 @@
 
         </nav>
 
-        <img src="@/assets/dc-logo-bg.png" alt="">
+        <div class="image-dc-back">
+
+        </div>
+        <!-- <img src="@/assets/dc-logo-bg.png" alt=""> -->
 
       </div>
-  </footer>
+  </section>
 </template>
 
 <script>
@@ -155,26 +158,30 @@ export default {
 
 <style lang="scss" scoped>
 
-    footer{
+    section{
         background-image: url('../assets/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 450px;
+        /* height: 450px; */
         overflow: hidden;
-        padding: 10px 20px;
 
         .container{
-            padding: 20px 0;
+            height: 100%;
             display: flex;
             justify-content: space-between;
 
-            img{
-                position: relative;
-                top: -60px;
+            div.image-dc-back{
+                background-image: url('../assets/dc-logo-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: 1;
+                width: 50%;
             }
 
             nav{
 
+                min-width: 50%;
+                padding: 20px;
                 display: flex;
 
                 div.col:nth-child(2){

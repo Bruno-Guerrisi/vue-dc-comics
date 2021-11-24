@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <section>
       <div class="container">
 
         <button>sign-up now!</button>
@@ -8,77 +8,54 @@
             <span>follow us</span>
 
             <ul>
-                <li>
+                <li v-for="(element, i) in linkSocial" :key="`element-${i}`">
                     <a href="">
-                        <img src="../assets/footer-facebook.png" alt="facebook">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <img src="../assets/footer-twitter.png" alt="twitter">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <img src="../assets/footer-youtube.png" alt="youtube">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <img src="../assets/footer-pinterest.png" alt="pinterest">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="">
-                        <img src="../assets/footer-periscope.png" alt="periscope">
+                        
+                        <img :src="element.link" alt="element.text">
                     </a>
                 </li>
             </ul>
         </div>
 
       </div>
-  </footer>
+  </section>
 </template>
 
 <script>
 export default {
     name: 'FooterSubscribe',
-    /* data() {
+    data() {
         return {
             linkSocial: [
                 {
                     text: 'facebook',
-                    link: '/footer-facebook.png',
+                    link: require('@/assets/img/footer-facebook.png'),
                 },
                 {
                     text: 'twitter',
-                    link: '/footer-twitter.png',
+                    link: require('@/assets/img/footer-twitter.png'),
                 },
                 {
                     text: 'youtube',
-                    link: '/footer-youtube.png',
+                    link: require('@/assets/img/footer-youtube.png'),
                 },
                 {
                     text: 'pinterest',
-                    link: '/footer-pinterest.png',
+                    link: require('@/assets/img/footer-pinterest.png'),
                 },
                 {
                     text: 'periscope',
-                    link: '/footer-periscope.png',
+                    link: require('@/assets/img/footer-periscope.png'),
                 },
             ],
         }
-    }, */
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 
-    footer{
+    section{
         background-color: #303030;
         height: 100px;
         padding: 10px 20px;
